@@ -1,2 +1,6 @@
 /books
 /__pycache__
+
+# to remove pycache from git repo I had to git rm -r --cached __pycache__ and then 
+# make another change and commit them together
+# this is what the "test" and "test2" commits refer to

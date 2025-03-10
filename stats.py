@@ -221,3 +221,23 @@ def count_characters(book):
 
     return characterdict
         
+def report_data(data):
+    
+    dict = {
+
+    }
+    list= []
+    for num in data:
+        dict = {"character": num, "count": data[num]}
+        list.append(dict)
+       # report_data["character": num] = {"count": data[num]}
+    
+    def sort_on(list):
+        return list["count"]
+    
+    list.sort(reverse=True, key=sort_on)
+
+    return list
+
+
+
