@@ -50,7 +50,6 @@ def count_characters(book):
     dash = 0
     apostrophe = 0
     dollar = 0
-    quote = 0
     semicolon = 0
     star = 0
     question = 0
@@ -193,7 +192,7 @@ def count_characters(book):
         'z': z,
         '.': dot,
         ',': comma,
-        'space': space,
+        ' ': space,
         '0': zero,
         '1': one,
         '2': two,
@@ -208,7 +207,7 @@ def count_characters(book):
         ')': endpar,
         '/': slash,
         '-': dash,
-        'apostrophe': apostrophe,
+        '´': apostrophe,
         '$': dollar,
         ';': semicolon,
         '*': star,

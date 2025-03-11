@@ -15,11 +15,23 @@ def main():
     countdict = count_characters(file)
 
     data = report_data(countdict)
+
     
-    print(count + " words found in the document")
 
-    print(data)
+    print("============ BOOKBOT ============")
+    print("Analyzing book found at books/frankenstein.txt...")
 
+    print("----------- Word Count ----------")
+    print("Found " + count + " total words")
+
+    print("--------- Character Count -------")
+
+    for num in data: 
+        if num["character"].isalpha() == True:
+            print(num["character"] + ": " + str(num["count"]))
+        else:
+            pass
+        #str.isalpha()
     #print(countdict)
 
 
